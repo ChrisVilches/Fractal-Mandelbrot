@@ -54,7 +54,8 @@ int numeroIteraciones(
 	if(abs((z_real*z_real) + (z_imaginario*z_imaginario)) >= 4)
 		return iteraciones;
 
-	// Crear el nuevo complejo para pasarlo nuevamente a la funcion
+	// Crear el nuevo complejo para pasarlo nuevamente a la funcion.
+	// El complejo "nuevo" es = Z^2 + C
 	float nuevo_real = (z_real*z_real) - (z_imaginario*z_imaginario) + c_real;
 	float nuevo_imaginario = (2 * z_real * z_imaginario) + c_imaginario;
 
